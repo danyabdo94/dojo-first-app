@@ -1,0 +1,13 @@
+﻿{
+    "data": [
+        {
+            "name": "Default Group",
+            "id": 1
+        },
+        {            
+            "name": "Mysterious Group",
+            "id": 2
+        }
+    ]
+}
+

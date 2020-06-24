@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Modular Web App</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@progress/kendo-theme-bootstrap@latest/dist/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/3.21/esri/css/esri.css"
+    />
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/kendo.all.min.js"></script>
+
+    <script>
+      // handling dojo configs and path used in side application
+      dojoConfig = {
+        parseOnLoad: false,
+        async: true,
+        packages: [
+         
+          {
+            name: "modules",
+            location: location.pathname.replace(/\/[^/]*$/, "") + "/modules",
+          },
+          {
+            name: "widgets",
+            location: location.pathname.replace(/\/[^/]*$/, "") + "/widgets",
+          },
+          {
+            name: "configs",
+            location: location.pathname.replace(/\/[^/]*$/, "") + "/configs",
+          },
+          {
+            name: "mCommons",
+            location:
+              location.pathname.replace(/\/[^/]*$/, "") + "/configs/common",
+          },
+          {
+            name: "dojo",
+            location: "https://js.arcgis.com/3.21/dojo",
+          },
+          {
+            name: "dijit",
+            location: "https://js.arcgis.com/3.21/dijit",
+          },
+          {
+            name: "dojox",
+            location: "https://js.arcgis.com/3.21/dojox",
+          },
+          {
+            name: "put-selector",
+            location: "https://js.arcgis.com/3.21/put-selector",
+          },
+          {
+            name: "xstyle",
+            location: "https://js.arcgis.com/3.21/xstyle",
+          },
+          {
+            name: "dgrid",
+            location: "https://js.arcgis.com/3.21/dgrid",
+          },
+          {
+            name: "esri",
+            location: "https://js.arcgis.com/3.21/esri",
+          },
+          {
+            name: "CCIAPI",
+            location: "CCI",
+          },
+        ],
+      };
+    </script>
+
+    <script src="https://js.arcgis.com/3.21"></script>
+    <script src="main.js"></script>
+    <script src="CCI.js"></script> 
+
+  </head>
+
+  <body>
+    <div id="mainContainer">
+      <div id="map">
+        <div id="HomeButton"></div>
+        <div id="clearButtonContainer">
+          <div id="clearButton"></div>
+        </div>
+      </div>
+      <div id="grid"></div>
+    </div>
+  </body>
+</html>

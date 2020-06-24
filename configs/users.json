@@ -1,0 +1,26 @@
+﻿{
+    "data": [
+        {
+            "name": "Ahmed",
+            "id": 1,
+            "groupId": 1
+        },
+        {
+            "name": "Mohamed",
+            "id": 2,
+            "groupId": 2
+        },
+        {
+            "name": "Hesham",
+            "id": 3,
+            "groupId": 2
+        },
+        {            
+            "name": "Maha",
+            "id": 4,
+            "groupId": 1
+        }
+
+    ]
+}
+

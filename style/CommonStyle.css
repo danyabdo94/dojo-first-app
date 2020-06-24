@@ -1,0 +1,58 @@
+﻿#mainContainer {
+  /* width: 99%; */
+  height: inherit;
+}
+
+.zoom-icon {
+  background-image: url("../assets/Icons/Zoom.png");
+  background-size: contain;
+}
+
+.route-icon {
+  background-image: url("../assets/Icons/Route.png");
+  background-size: contain;
+}
+
+#grid {
+  width: 100%;
+  height: 30%;
+}
+
+#map {
+  width: 100%;
+  height: 70%;
+}
+
+#HomeButton {
+  position: absolute;
+  top: 95px;
+  left: 20px;
+  z-index: 50;
+}
+
+#clearButtonContainer {
+  position: absolute;
+  background-color: white;
+  top: 130px;
+  left: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  z-index: 50;
+  cursor: pointer;
+
+}
+#clearButton {
+  position: absolute;
+  background-image: url("../assets/Icons/Clear.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  z-index: 51;
+  margin: 5px;
+}
+
+body {
+  min-height: 98vh;
+  margin: 0;
+}
